@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text to Speech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+</head>
+<body>
+    <div class="bg-white py-16 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto max-w-2xl lg:text-center">
+                <h2 class="text-base font-semibold leading-7 text-indigo-600">Text to Speech Converter</h2>
+                <form action="/text-to-speech" method="POST">
+                    <div class="space-y-12">
+                        <div class="border-b border-gray-900/10 pb-8">
+                            <p class="mt-1 text-sm leading-6 text-gray-600">Ketik kata yang akan di konversi menjadi suara.</p>
+                            <div class="col-span-full">
+                                <div class="mt-2">
+                                <textarea  name="text" rows="3" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-2 flex items-center justify-center gap-x-4 ">
+                <input type="submit" class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" value="Convert to Speech">
+                </div>
+            </form>
+                <div class="py-8 ">
+                    <div class="mx-auto max-w-2xl ">
+                        <h2 class="mt-1  leading-6 text-gray-600 lg:text-center">
+                            Pustaka yang di gunakan untuk mengubah text menjadi suara ialah gTTS</h2>
+                        <p class="mt-1 text-sm leading-6 text-gray-600 lg:text-justify">
+                            gTTS (Google Text-to-Speech) adalah pustaka Python yang kuat untuk mengubah teks menjadi suara dengan mudah. Dengan gTTS, Anda dapat membuat aplikasi yang membaca teks dengan suara alami. Pustaka ini mendukung berbagai bahasa, termasuk bahasa Indonesia. Anda juga dapat mengontrol kecepatan bacaan teks. gTTS memungkinkan integrasi dengan aplikasi web untuk memungkinkan pengguna memasukkan teks dan mendengarkan suaranya melalui web browser. Ini adalah alat yang berguna dalam pengembangan aplikasi dengan fitur pembacaan teks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
