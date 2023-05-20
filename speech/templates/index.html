@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text-to-Speech</title>
+</head>
+<body>
+    <h1>Text-to-Speech</h1>
+    <form action="/text-to-speech" method="post">
+        <textarea name="text" rows="4" cols="50" placeholder="Masukkan teks..."></textarea><br>
+        <input type="submit" value="Bicarakan">
+    </form>
+    
+    <h2>Pilih suara:</h2>
+    <form action="/change-voice" method="post">
+        <select name="voice">
+            <option value="voice_id_1">Suara 1</option>
+            <option value="voice_id_2">Suara 2</option>
+            <!-- Tambahkan opsi lain sesuai dengan suara yang tersedia -->
+        </select>
+        <input type="submit" value="Ubah Suara">
+    </form>
+</body>
+</html>
